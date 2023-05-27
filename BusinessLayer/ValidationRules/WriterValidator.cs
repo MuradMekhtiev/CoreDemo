@@ -15,7 +15,7 @@ namespace BusinessLayer.ValidationRules
 			RuleFor(x => x.WriterName).NotEmpty().WithMessage("Please fill out Username section.");
 			RuleFor(x => x.WriterEmail).NotEmpty().WithMessage("Please fill out Email section.");
 			RuleFor(x => x.WriterPassword).NotEmpty().WithMessage("Please fill out Password section.");
-			RuleFor(x => x.WriterImage).NotEmpty().WithMessage("Please fill out Image section.");
+			//RuleFor(x => x.WriterImage).NotEmpty().WithMessage("Please fill out Image section.");
 			RuleFor(x => x.WriterPassword).MinimumLength(8).WithMessage("The password should be at least 8 characters long.");
 			RuleFor(p => p.WriterPassword).Matches(@"[A-Z]+").WithMessage("Password should contain at least one upper case letter.");
 			RuleFor(p => p.WriterPassword).Matches(@"[a-z]+").WithMessage("Password should contain at least one lower case letter.");
